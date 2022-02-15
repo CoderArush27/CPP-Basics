@@ -5,7 +5,7 @@ class Vehicle {
   public:
     string brand = "Ford";
     void honk() {
-      cout << "Tuut, tuut! \n" ;
+      cout << "POWER HORN \n" ;
     }
 };
 
@@ -13,11 +13,12 @@ class Vehicle {
 class Car:public Vehicle {
   public:
     string model = "Mustang";
+    string mfy = "2020";
 };
 
 int main() {
   Car myCar;
   myCar.honk();
-  cout << myCar.brand + " " + myCar.model;
+  cout << myCar.brand + " " + myCar.model + " " + myCar.mfy;
   return 0;
 }
